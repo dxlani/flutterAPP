@@ -20,7 +20,24 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('hello world'),
+        ),
+        body: Center(
+          child: Container(
+            child: new Text(
+              'dingxiaolin',
+             style:TextStyle(fontSize:40.0)
+             ),
+             alignment: Alignment.center,
+             width: 200,
+             height: 200,
+             color: Colors.lightBlue,
+             margin: EdgeInsets.fromLTRB(10, 20, 10, 20),
+          )
+        ),
+      )
     );
   }
 }
